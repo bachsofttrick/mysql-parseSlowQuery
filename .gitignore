@@ -141,3 +141,6 @@ vite.config.ts.timestamp-*
 # Output files
 *.csv
 *.json
+
+# Log file
+*.log*
