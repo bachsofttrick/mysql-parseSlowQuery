@@ -146,7 +146,7 @@ fs.readFile(slowQueryFilePath, 'utf-8', (err, data) => {
     }
 
     // Export the CSV
-    exportToCSV(slowQueries, 'slow_queries.csv');
+    exportToCSV(slowQueries, 'slow-queries.csv');
 });
 
 
