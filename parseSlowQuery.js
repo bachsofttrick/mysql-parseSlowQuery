@@ -85,7 +85,7 @@ fs.readFile(slowQueryFilePath, 'utf-8', (err, data) => {
 
         if (line.startsWith('SET timestamp=')) {
             currentQuery.timestamp = Number(line.split('=')[1].replace(/;/, '').trim());
-            currentQuery.timedate = Date(currentQuery.timestamp);
+            currentQuery.timedate = (new Date(currentQuery.timestamp * 1000)).toString();
         }
 
         if (line.startsWith('SELECT')) {

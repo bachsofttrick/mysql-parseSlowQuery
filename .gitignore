@@ -144,3 +144,6 @@ vite.config.ts.timestamp-*
 
 # Log file
 *.log*
+
+# Vim temp files
+*.swp
